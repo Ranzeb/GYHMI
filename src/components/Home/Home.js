@@ -3,7 +3,7 @@ export default function Home() {
     return (
         <div className="relative bg-black h-screen">
 
-            <div className="isolate pt-14">
+            <div className="isolate">
                 <img
                     src="/G-black.png"
                     alt=""

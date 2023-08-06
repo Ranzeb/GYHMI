@@ -14,10 +14,10 @@ export default function Navbar () {
 
     return (
         <div className="relative bg-black">
-            <header className="absolute inset-x-0 sticky top-0 z-50">
+            <header className="absolute inset-x-0 sticky top-0">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <a href="#" className="mt-2 -m-1.5 p-1.5">
                             <img
                                 className="h-24 w-auto"
                                 src="/G-bianco.png"
@@ -26,7 +26,7 @@ export default function Navbar () {
                         </a>
                         <a href="#" className="-m-1.5 p-1.5">
                             <img
-                                className="h-24 w-auto"
+                                className="h-32 w-auto"
                                 src="/Gyhmi-bianco.png"
                                 alt=""
                             />
@@ -71,7 +71,7 @@ export default function Navbar () {
                                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                             </button>
                         </div>
-                        <div className="mt-6 flow-root">
+                        <div className="flow-root">
                             <div className="-my-6 divide-y divide-gray-500/25">
                                 <div className="space-y-2 py-6">
                                     {navigation.map((item) => (
