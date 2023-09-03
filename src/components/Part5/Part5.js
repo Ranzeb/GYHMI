@@ -1,31 +1,67 @@
+const features = [
+    {
+        name: 'Ottimizzazione SEO',
+        description:
+            'La visibilità online è la chiave per il successo.\n' +
+            'Garantiremo che il tuo sito web raggiunga le posizioni più alte nei risultati di ricerca.\n'
+    },
+    {
+        name: 'Creazione Siti Web',
+        description:
+            'Dall\'ideazione alla realizzazione, creiamo piattaforme online che rappresentano la tua\n' +
+            'azienda con stile e funzionalità.\n'
+    },
+    {
+        name: 'Gestione Social Media',
+        description:
+            'I social media sono un potente strumento di comunicazione. Gestiamo\n' +
+            'campagne social che catturano l\'attenzione\n' +
+            'del tuo pubblico.'
+    },
+    {
+        name: 'Mediazione e Management',
+        description:
+            'Connettiamo i punti nel mondo digitale e non solo. Troveremo\n' +
+            'le partnership giuste per espandere la tua brand awareness'
+    },
+    {
+        name: 'Organizzazione di Eventi Unici',
+        description:
+            'Da eventi aziendali all\'organizzazione di lanci di prodotti, trasformiamo le tue idee in\n' +
+            'eventi straordinari.'
+    },
+    {
+        name: 'Esperienza personalizzata',
+        description:
+            'La tua visione è la nostra priorità. Lavoriamo a stretto contatto con te per sviluppare\n' +
+            'strategie personalizzate che si adattano ai tuoi obiettivi.'
+    },
+]
+
+
 export default function Part5() {
 
     return (
-        <div className="relative bg-black h-screen">
-            <div className=" isolate pt-14">
-                <img
-                    src="/G-black.png"
-                    alt=""
-                    className="absolute mt-28 inset-0 -z-10 h-full w-full object-cover"
-                />
-                <div className="mx-auto pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 xl:pt-28 2xl::py-40">
-                    <div className="px-20 lg:px-0 lg:pt-44 lg:pl-56 2xl:ml-5">
-                        <div className="mx-auto xl:w-screen xl:max-w-6xl 2xl:w-screen">
-                            <div className="2xl:ml-28 2xl:mt-32">
-                                <h1 className="2xl:text-8xl font-bold tracking-tight text-white sm:text-7xl">
-                                    WE PLAN YOUR PROJECT
-                                </h1>
-                                <div className="xl:max-w-2xl 2xl:w-screen">
-                                    <p className="mt-8 text-4xl leading-normal text-gray-300 2xl:font-bold">
-                                    Permettiamo alle persone di realizzare progetti
-                                    nativi e/o ottimizzare quelli già esistenti
-                                    attraverso l’organizzazione del business, eventi
-                                    e servizi di rappresentanza
-                                    </p>
+        <div className="bg-black" id='what-we-do'>
+
+            <div className="py-24 sm:py-32 sm:mb-96 md:mb-0" id='features'>
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="mx-auto max-w-2xl text-center">
+                        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center">What We Do</h2>
+                    </div>
+                    <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                        {features.map((feature) => (
+                            <div
+                                className="max-w-sm bg-white border border-gray-200 rounded-lg shadow mt-5">
+                                <div className="p-5">
+                                    <a href="#">
+                                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{feature.name}</h5>
+                                    </a>
+                                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{feature.description}</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        ))}
+                    </dl>
                 </div>
             </div>
         </div>
