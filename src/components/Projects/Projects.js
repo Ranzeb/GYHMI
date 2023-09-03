@@ -17,7 +17,7 @@ const projects = [
         name: 'GYHMI',
         description:
             'Web Agency specialized in management and websites',
-        src: '/InsideDocx.png',
+        src: '/gyhmi.png',
         href: 'https://gyhmi.com/'
     }
 ]
