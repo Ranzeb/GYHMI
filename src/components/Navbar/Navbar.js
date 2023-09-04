@@ -25,14 +25,16 @@ export default function Navbar () {
                 className="bg-black dark:bg-gray-900 fixed w-full z-20 top-0 left-0">
                 <div className='flex items-center z-10 justify-between p-2 lg:px-8'>
                     <div className="flex lg:flex-1 ">
-                        <a href="#" className="mt-2 -m-1.5 p-1.5">
+
+
+                        <a href="#" className="-m-1.5 md:mt-0 mt-7">
                             <img
-                                className="h-24 w-auto"
+                                className="h-16 w-auto"
                                 src="/G-bianco.png"
                                 alt=""
                             />
                         </a>
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <a href="#" className="-m-1.5 md:ml-0 ml-7 md:mt-0">
                             <img
                                 className="h-32 w-auto"
                                 src="/Gyhmi-bianco.png"
@@ -47,7 +49,7 @@ export default function Navbar () {
                             onClick={() => setMobileMenuOpen(true)}
                         >
                             <span className="sr-only">Open main menu</span>
-                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                            <Bars3Icon className="h-10 w-10" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
@@ -61,13 +63,13 @@ export default function Navbar () {
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 z-50" />
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+                <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <img
                                 className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                                src="/G-bianco.png"
                                 alt=""
                             />
                         </a>
@@ -81,7 +83,7 @@ export default function Navbar () {
                         </button>
                     </div>
                     <div className="flow-root">
-                        <div className="-my-6 divide-y divide-gray-500/25">
+                        <div className="-my-6 mt-10 divide-y divide-gray-500/25">
                             <div className="space-y-2 py-6">
                                 {navigation.map((item) => (
                                     <a
