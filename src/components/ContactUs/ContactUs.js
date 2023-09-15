@@ -1,7 +1,8 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
-import React, { useState } from 'react'
+import React, {useState} from 'react'
+import RevealOnScroll from "../RevealOnScroll";
 
 export default function ContactUs() {
     const [email, setEmail] = useState('');
@@ -45,6 +46,7 @@ export default function ContactUs() {
                 pauseOnHover
                 theme="dark"
             />
+            <RevealOnScroll>
             <div className="py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
@@ -133,6 +135,7 @@ export default function ContactUs() {
                     </div>
                 </div>
             </div>
+            </RevealOnScroll>
         </div>
     )
 }

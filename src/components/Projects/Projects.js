@@ -1,3 +1,5 @@
+import RevealOnScroll from "../RevealOnScroll";
+
 const projects = [
     {
         name: 'RealtyBooker',
@@ -26,6 +28,7 @@ export default function Projects() {
     return (
         <>
             <div className="bg-black">
+                <RevealOnScroll>
                 <div className="py-24 sm:py-32" id='projects'>
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
                         <div className="mx-auto max-w-2xl text-center">
@@ -62,6 +65,7 @@ export default function Projects() {
                         </dl>
                     </div>
                 </div>
+                </RevealOnScroll>
             </div>
         </>
     );

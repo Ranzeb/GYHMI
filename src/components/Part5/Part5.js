@@ -1,3 +1,6 @@
+import React from "react";
+import RevealOnScroll from "../RevealOnScroll";
+
 const features = [
     {
         name: 'Ottimizzazione SEO',
@@ -38,12 +41,12 @@ const features = [
     },
 ]
 
-
 export default function Part5() {
 
     return (
         <div className="bg-black" id='what-we-do'>
 
+            <RevealOnScroll>
             <div className="py-24 sm:py-32 sm:mb-96 md:mb-0" id='features'>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center">
@@ -64,6 +67,7 @@ export default function Part5() {
                     </dl>
                 </div>
             </div>
+            </RevealOnScroll>
         </div>
     )
 }

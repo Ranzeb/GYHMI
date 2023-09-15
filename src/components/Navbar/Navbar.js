@@ -27,7 +27,7 @@ export default function Navbar () {
                     <div className="flex lg:flex-1 ">
 
 
-                        <a href="#" className="-m-1.5 md:mt-0 mt-7">
+                        <a href="#" className="-m-1.5 mt-8">
                             <img
                                 className="h-16 w-auto"
                                 src="/G-bianco.png"
